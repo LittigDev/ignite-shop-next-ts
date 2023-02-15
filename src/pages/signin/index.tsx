@@ -1,5 +1,31 @@
+import { Container, Content } from '../../styles/pages/signin';
+
 export default function Signin() {
     return (
-        <h1>Tela de Login</h1>
+        <Container>
+            <Content>
+                <main>
+                    <form>
+                    <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
+
+                    <div className="form-floating">
+                        <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
+                        <label htmlFor="floatingInput">Email address</label>
+                    </div>
+                    <div className="form-floating">
+                        <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
+                        <label htmlFor="floatingPassword">Password</label>
+                    </div>
+
+                    <div>
+                        <label>
+                        <input type="checkbox" value="remember-me" /> Remember me
+                        </label>
+                    </div>
+                    <button className="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                    </form>
+                </main>
+            </Content>
+        </Container>
     )
 }
